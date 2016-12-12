@@ -1,0 +1,920 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Goat Haunt",
+        "popupContent": "Off the boat and into the mountains",
+        "image": "https://www.youtube.com/watch?v=BCnxHaYBCDQ"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.88856887817381,
+          48.95952463206383
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.8883113861084,
+          48.95914422933736
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.888418674469,
+          48.958763823709695
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.88895511627197,
+          48.95845386142354
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "US Customs",
+        "popupContent": "Passport please!",
+        "image": "https://c2.staticflickr.com/8/7359/12299417923_5b56cebb1d_b.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.89195919036865,
+          48.957946646255024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.89303207397461,
+          48.95739715733544
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.8944911956787,
+          48.956678585768586
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.89513492584227,
+          48.956678585768586
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.89530658721924,
+          48.95583319420204
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.8976240158081,
+          48.95574865425739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.89794588088989,
+          48.956171352547926
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.89891147613525,
+          48.95642496980297
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.90180826187134,
+          48.95495960786509
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.90371799468993,
+          48.95810162921484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.9045763015747,
+          48.95810162921484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.90500545501708,
+          48.9586088428074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.90652894973755,
+          48.95781984165699
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.90841722488403,
+          48.95780575223732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.90998363494873,
+          48.958312968838534
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.91260147094725,
+          48.95805936118266
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.91281604766846,
+          48.95873564539963
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.91470432281494,
+          48.95836932592029
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.91427516937256,
+          48.95817207585557
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.91766548156738,
+          48.95294466491526
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.91993999481201,
+          48.951267832167154
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.9281153678894,
+          48.947956274222406
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.9292311668396,
+          48.946885255256696
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.92955303192139,
+          48.947392582895475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.93232107162474,
+          48.94674432999719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.93358707427979,
+          48.94727984386595
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.93920898437499,
+          48.94598332671854
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.94350051879881,
+          48.94563100645562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.94583940505981,
+          48.945292776662974
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Lake Janet",
+        "popupContent": "Lunch spot",
+        "image": "http://3.bp.blogspot.com/-63U_bF3SQ80/TlusPQ2kHZI/AAAAAAAABfY/UxS7HKIAB90/s1600/Francis-Lake_.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.94892930984497,
+          48.94427807353023
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.95034551620483,
+          48.94341837834236
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.95201921463011,
+          48.942460012151976
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.96671772003174,
+          48.940416375725334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.96770477294922,
+          48.939894882684555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.98317575454712,
+          48.93868274267421
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.9931535720825,
+          48.93978212671608
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Lake Frances",
+        "popupContent": "Water stop and water fall",
+        "image": "https://c1.staticflickr.com/6/5065/5604599064_c1dcb81cf0_b.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.99574995040892,
+          48.939951260573274
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.00214433670044,
+          48.94206538543028
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.00652170181274,
+          48.943333817359964
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.00901079177856,
+          48.94570147070721
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.01165008544922,
+          48.94726575146933
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.01225090026855,
+          48.94727984386595
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.01250839233398,
+          48.9476180601904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.01300191879272,
+          48.94722347425566
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.01413917541504,
+          48.947702613913314
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.01901006698608,
+          48.94788581315478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.01988983154297,
+          48.947660337069756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "The Pond",
+        "popupContent": "Moose are always feeding",
+        "image": "http://www.livingwilderness.com/wildlife/moose-lake-feeding.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.02332305908203,
+          48.94788581315478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.02473926544188,
+          48.94680070014876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.02589797973633,
+          48.94675842254103
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.02587652206421,
+          48.94715301215325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.02770042419432,
+          48.94726575146933
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.0266704559326,
+          48.94813947253257
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.02795791625977,
+          48.9479280898073
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.02752876281738,
+          48.94822402537193
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.02941703796387,
+          48.94787172092932
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.02890205383301,
+          48.94819584110806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.03218507766724,
+          48.94687116274866
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.03287172317505,
+          48.94940775007907
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Brown's Pass",
+        "popupContent": "Go up or go down",
+        "image": "http://4.bp.blogspot.com/-GN-g6OjHnn0/TmWJUpjQYzI/AAAAAAAABhg/lEAte1Dtf5Y/s640/Brown-Pass-Trail.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.03559684753418,
+          48.950788726744626
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.03570413589478,
+          48.95355056540782
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.03817176818846,
+          48.95560775403126
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.0430212020874,
+          48.9579607356349
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.04825687408447,
+          48.95797482501081
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.0528917312622,
+          48.95741124687051
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.05366420745848,
+          48.95818616517176
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.05572414398193,
+          48.96044040450599
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.05722618103027,
+          48.9607221772593
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.05823469161986,
+          48.96220145809757
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.05909299850464,
+          48.962877686153156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.05896425247192,
+          48.96259592557763
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.06098127365112,
+          48.96434281548524
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.06351327896117,
+          48.96576564027225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Hole in the Wall",
+        "popupContent": "My favorite place in the world",
+        "image": "https://farm6.staticflickr.com/5200/6997825080_6d5a7d0cac_b.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.06763315200806,
+          48.965779727443426
+        ]
+      }
+    }
+  ]
+}
