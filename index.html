@@ -1,1 +1,361 @@
-<h1>Glacier map coming</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- UTF-8 is a character encoding capable of encoding all possible characters-->
+    <!-- That means, you can use non-English characters for the labels if you prefer-->
+    <meta charset="utf-8" />
+    <title>Animated Path through Glacier National Park with a PopUp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css"/>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" /> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js" type="text/javascript"></script>
+    <!--<script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script> -->
+
+
+    <style>
+        html, body { margin: 0; padding: 0; height: 100%; }
+        #map {
+            min-height: 100%;
+        }
+        svg {
+            position: relative;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="map"></div>
+
+
+    <script type="text/javascript">
+
+    var map = L.map('map').setView([48.955629, -113.971967], 12);
+
+//begin try imageUrl
+    //var imageUrl = 'https://farm6.staticflickr.com/5200/6997825080_6d5a7d0cac_b.jpg',
+    //imageBounds = [[48.965779, -114.067633], [48.973950, -114.087671]];
+
+    //L.imageOverlay(imageUrl, imageBounds).addTo(map)
+
+//variation on the image overlay - but it takes over... the bounds need work?  or does it simply overlay everything?
+    //var overlay = new L.ImageOverlay("https://farm6.staticflickr.com/5200/6997825080_6d5a7d0cac_b.jpg", [48.965779, -114.067633], [48.973950, -114.087671], {
+    //opacity: 0.5
+    //});
+    //map.addLayer(overlay);
+
+    //L.DomEvent.on(overlay._image, 'click', function(e) {
+    //console.log(e)
+    //})
+//end try imageUrl
+
+
+//begin hidden popups
+    var marker1 = L.marker([48.965779, -114.067633], {
+      opacity: 0
+    })
+
+    var popup1 = L.popup()
+      .setContent("<a href=https://farm6.staticflickr.com/5200/6997825080_6d5a7d0cac_b.jpg>Hole-in-the-Wall</a><br><i>'My happy place'</i></br>")
+
+    marker1.bindPopup(popup1);
+    marker1.on("mouseover", function(e) {
+      this.openPopup()
+    });
+    marker1.addTo(map);
+
+    var marker2 = L.marker([48.95952463206383, -113.88856887817381], {
+      opacity: 0
+    })
+
+    var popup2 = L.popup()
+      .setContent("<a href=https://www.youtube.com/watch?v=BCnxHaYBCDQ>Goat Haunt</a><br><i>'Off the boat and into the mountains'</i></br>'US Customs - Passport please!'</br>")
+
+    marker2.bindPopup(popup2);
+    marker2.on("mouseover", function(e) {
+      this.openPopup()
+    });
+    marker2.addTo(map);
+
+    var marker3= L.marker([48.939951260573274, -113.99574995040892], {
+      opacity: 0
+    })
+
+    var popup3 = L.popup()
+      .setContent("<a href=https://c1.staticflickr.com/6/5065/5604599064_c1dcb81cf0_b.jpg>Lake Frances</a><br><i>'Water stop and water fall'</i></br>")
+
+    marker3.bindPopup(popup3);
+    marker3.on("mouseover", function(e) {
+      this.openPopup()
+    });
+    marker3.addTo(map);
+
+    var marker4= L.marker([48.94788581315478, -114.02332305908203], {
+      opacity: 0
+    })
+
+    var popup4 = L.popup()
+      .setContent("<a href=http://www.livingwilderness.com/wildlife/moose-lake-feeding.jpg>The Pond</a><br><i>'Moose are always feeding'</i></br>")
+
+    marker4.bindPopup(popup4);
+    marker4.on("mouseover", function(e) {
+      this.openPopup()
+    });
+    marker4.addTo(map);
+
+    var marker5= L.marker([48.950788726744626, -114.03559684753418], {
+      opacity: 0
+    })
+
+    var popup5 = L.popup()
+      .setContent("<a href=http://4.bp.blogspot.com/-GN-g6OjHnn0/TmWJUpjQYzI/AAAAAAAABhg/lEAte1Dtf5Y/s640/Brown-Pass-Trail.jpg>Brown's Pass</a><br><i>'Go up or go down'</i></br>")
+
+    marker5.bindPopup(popup5);
+    marker5.on("mouseover", function(e) {
+      this.openPopup()
+    });
+    marker5.addTo(map);
+
+    var marker6= L.marker([48.94427807353023, -113.94892930984497], {
+      opacity: 0
+    })
+
+    var popup6 = L.popup()
+      .setContent("<a href=http://3.bp.blogspot.com/-63U_bF3SQ80/TlusPQ2kHZI/AAAAAAAABfY/UxS7HKIAB90/s1600/Francis-Lake_.jpg>Lake Janet</a><br><i>'Lunch spot'</i></br>")
+
+    marker6.bindPopup(popup6);
+    marker6.on("mouseover", function(e) {
+      this.openPopup()
+    });
+    marker6.addTo(map);
+//end popups
+//trying a more elegant solution - see the forEach code below - issues with leaflet and multiple markers coming from and array
+
+
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+          attribution: 'Animated path made with <a href="https://d3js.org/">D3</a>, Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="http://mapbox.com">Mapbox</a>',
+          id: 'mapbox.outdoors',
+          accessToken: 'pk.eyJ1Ijoic3Vlb2xkZW5idXJnIiwiYSI6ImNpdGFubmlxOTAybzcydHM2NGoxcDZ2MjMifQ.KgNrecfPcjxG9lDlnIGJzA'  // mapbox access token
+        }).addTo(map);
+
+
+        var svg = d3.select(map.getPanes().overlayPane).append("svg"); // no width or height here - needs to be dynamic - and the panes are overlayed and change auomatically with zooming
+
+        var g = svg.append("g").attr("class", "leaflet-zoom-hide"); // 'g' is the group element; the attribute of "class" references the CSS of "leaflet-zoom-hide; this hides the path being drawn as the zoom in and out is used - no dimensions are set because it needs to be dynamic
+
+        // read in the GeoJSON
+        // the geojson data, the contents=types, features, x and y points, labels, etc.., is the object referenced as 'collection'
+        d3.json("GNPimages.geojson", function(collection) {
+
+            var featuresdata = collection.features;
+
+            // lat and long need to be transformed for use with D3
+            // This projects points converting the geojson data to svg
+            var transform = d3.geo.transform({
+                point: projectPoint
+            });
+            var d3path = d3.geo.path().projection(transform);
+
+            function projectPoint(x, y) {
+                var point = map.latLngToLayerPoint(new L.LatLng(y, x));
+                this.stream.point(point.x, point.y);
+            }
+
+            // Generate a line from input points; the svg calls a 'line' to be drawn
+            var toLine = d3.svg.line()
+                .interpolate("linear") // this 'linear interpolate' creates a 'normal line' (jagged) between points rather than making "pretty' adjustments to the values or intermediate points between waypoints
+                .x(function(d) {
+                    return applyLatLngToLayer(d).x // function(d) refers to the data being called and then returned and applied to the layer - defining stream.point? above
+                })
+                .y(function(d) {
+                    return applyLatLngToLayer(d).y
+                });
+
+            // Draw the waypoints but make them invisible
+            var ptFeatures = g.selectAll("circle")
+                .data(featuresdata)
+                .enter()
+                .append("circle")
+                .attr("r", 3)
+                .style("opacity","0");   //The waypoints are hidden now by using 0 opacity
+
+            // Draw the line path
+            var linePath = g.selectAll(".lineConnect")
+                .data([featuresdata])
+                .enter()
+                .append("path")
+                .style("fill","none")
+                .style("stroke","black")    // line color
+                .style("stroke-width","2px") // line width
+                .style("opacity","1");    // line opacity
+
+            // Draw the traveling circle
+            // it will travel along our path - but how is it associated with the line being drawn?
+            var marker = g.append("circle")
+                .attr("r", 6)    // traveling circle radius
+                .attr("id", "marker")
+                .style("fill", "orange")  // traveling circle color
+                .style("opacity", "0.65"); // traveling circle opacity
+
+            // Draw the listed features as circles
+            // example featuresdata begins at the 0 point and ends at the last point - count the points - is there a way to use total point count as a reference rather than hard code?
+            // enter features with name and popupContent
+            var alongTheway = [featuresdata[0], //featuresdata[4],
+            featuresdata[33], featuresdata[40], featuresdata[51], featuresdata[63], featuresdata[77]
+          ];
+//begin forEach test
+//t is null error - have to figure this out at a different time - multiple markers and leaflet issue
+            //function createMarkerPopup(feature) {
+                //var name = featuresdata.name
+                //var content = featuresdata.popupContent
+                //var imageUrl = featuresdata.image
+                //var latlng = featuresdata.coordinates
+
+              //var markerAll = L.marker([featuresdata.coordinates], {
+                //opacity: 0
+              //})
+
+              //var contentString = "<a href=" + imageUrl + "><br><i>" + content + "</i></br></a>"
+              //var popup = L.popup()
+                //.setContent(contentString);
+
+              //markerAll.bindPopup(popup);
+
+              //markerAll.on("mouseover", function(e) {
+                //this.openPopup()
+              //});
+
+              //markerAll.addTo(map);
+
+            //}
+
+            //alongTheway.forEach (function(feature) {
+               //createMarkerPopup(feature)  //does this need to be: this.createMarkerPopup(feature)??
+            //});
+//end forEach test
+
+            var begend = g.selectAll(".loc")
+                .data(alongTheway)
+                .enter()
+                .append("circle", ".loc")
+                .attr("r", 3)  // features circle radius
+                .style("fill", "green")  // features color
+                .style("opacity", "1");  // features opacity
+
+            // Add labels to the features
+            var text = g.selectAll("text")
+                .data(alongTheway)
+                .enter()
+                .append("text")
+                .text(function(d){
+                  return d.properties.name
+                  //return d.properties.popupContent  //test to call this data
+                  //return d.properties.image  //test to call
+                })
+                .attr("y", -12) // relative y position of the label to the point
+                .attr("x", -20)  // relative x position of the label to the point
+                .style("fill","black")  // label font color
+                .style("font-weight","bold")  // label font weight
+                .style("font-size","10px")    // label font size
+                .style("text-shadow","2px 2px 3px #FFF, 4px 4px 6px #000");  // add shadow effect
+
+
+                // RESET code - for repositioning or zoom
+                // The functions below will reset the view when zooms in or out
+                map.on("viewreset", reset);
+                reset();
+                transition();
+                function reset() {
+                    var bounds = d3path.bounds(collection),
+                        topLeft = bounds[0],
+                        bottomRight = bounds[1];
+
+                    text.attr("transform",
+                        function(d) {
+                            return "translate(" +
+                                applyLatLngToLayer(d).x + "," +
+                                applyLatLngToLayer(d).y + ")";
+                        });
+
+                    begend.attr("transform",
+                        function(d) {
+                            return "translate(" +
+                                applyLatLngToLayer(d).x + "," +
+                                applyLatLngToLayer(d).y + ")";
+                        });
+
+                    ptFeatures.attr("transform",
+                        function(d) {
+                            return "translate(" +
+                                applyLatLngToLayer(d).x + "," +
+                                applyLatLngToLayer(d).y + ")";
+                        });
+
+                    marker.attr("transform",
+                        function() {
+                            var y = featuresdata[0].geometry.coordinates[1];
+                            var x = featuresdata[0].geometry.coordinates[0];
+                            return "translate(" +
+                                map.latLngToLayerPoint(new L.LatLng(y, x)).x + "," +
+                                map.latLngToLayerPoint(new L.LatLng(y, x)).y + ")";
+                        });
+
+                    svg.attr("width", bottomRight[0] - topLeft[0] + 500)
+                        .attr("height", bottomRight[1] - topLeft[1] + 250)
+                        .style("left", topLeft[0] - 50 + "px")
+                        .style("top", topLeft[1] - 50 + "px");
+
+                    linePath.attr("d", toLine);
+
+                    g.attr("transform", "translate(" + (-topLeft[0] + 50) + "," + (-topLeft[1] + 50) + ")");
+                }
+                // END of code for RESET for repostioning or zoom
+
+                // manner in which the line is being drawn
+                // speed at which the line is being drawn;  uses ease-in-out animation
+                // this might also make sense for the position of the conditional - as the line is being drawn??
+                function transition() {
+                    linePath.transition()
+                        .duration(15000)
+                        .attrTween("stroke-dasharray", tweenDash)
+                        .each("end", function() {
+
+                          // This should slow the restart of the loop - fires at the end of the line (Destination) - but it doesn't appear to - is the calculation too fast - how to slow??
+                          //  var waiting = 0;
+                          //  while(waiting < 10000) {
+                          //  waiting = waiting + 1;
+                          //  }
+                            d3.select(this).call(transition);  // this creates the infinite loop - calling the function transition (itself) at the end
+                        });
+                }
+
+                // Any sufficiently advanced technology is indistinguishable from magic. - Arthur C. Clark by way of Mike Bostock :-)
+                function tweenDash() {
+                    return function(t) {
+                        var l = linePath.node().getTotalLength();
+
+                        interpolate = d3.interpolateString("0," + l, l + "," + l);
+
+                        var marker = d3.select("#marker");
+                        var p = linePath.node().getPointAtLength(t * l);
+
+                        marker.attr("transform", "translate(" + p.x + "," + p.y + ")");
+                        console.log(interpolate(t));
+                        return interpolate(t);
+                    }
+                }
+            });
+
+            function applyLatLngToLayer(d) {
+                var y = d.geometry.coordinates[1];
+                var x = d.geometry.coordinates[0];
+                return map.latLngToLayerPoint(new L.LatLng(y, x));
+            }
+
+
+    </script>
+</body>
+
+</html>
